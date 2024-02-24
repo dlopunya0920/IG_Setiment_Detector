@@ -16,7 +16,7 @@ import requests
 from io import BytesIO
 
 from PIL import Image
-instagram_logo_url = 'https://kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/07/logo-ig-instagram-png-transparent-instagram-images-pluspng-3.png'
+instagram_logo_url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png'
 response = requests.get(instagram_logo_url)
 if response.status_code == 200:
     instagram_logo = Image.open(BytesIO(response.content))
